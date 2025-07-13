@@ -40,7 +40,7 @@ export default function Home() {
           </h1>
           
           <p className="text-lg md:text-xl text-stone-400 max-w-2xl mx-auto">
-            Frontend Developer passionate about creating beautiful and functional web experiences
+            Frontend Developer passionate about building delightful user interfaces and ensuring quality through effective software testing 🚀
           </p>
         </div>
 

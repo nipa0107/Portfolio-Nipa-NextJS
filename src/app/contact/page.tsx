@@ -26,40 +26,39 @@ export default function Contact() {
   return (
     <div className="max-w-4xl mx-auto space-y-12">
       <div className="text-center space-y-4">
-        <h1 className="text-4xl md:text-5xl font-light">Contact</h1>
-        <p className="text-lg text-gray-600 dark:text-gray-400">
-          Let's work together on your next project
-        </p>
+        <div className="text-center mb-10">
+          <span className="text-sm font-medium bg-purple-200 px-4 py-1.5 rounded-full">Contact</span>
+        </div>
+        <h1 className="text-4xl sm:text-4xl font-bold tracking-tight">Let's work together on your next project</h1>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12">
-        <div className="space-y-8">
-          <div>
-            <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
-            <p className="text-gray-700 dark:text-gray-300 mb-8">
-              I'm always interested in new opportunities and collaborations. 
-              Whether you have a project in mind or just want to say hello, 
+      <div className="flex justify-center text-center ">
+        <div className="space-y-6 max-w-2xl mx-auto">
+          <h2 className="text-2xl text-stone-700 font-semibold mb-6">Get in Touch</h2>
+          <div className='flex items-center justify-center'>
+            <p className="text-stone-600 mb-8">
+              I'm always interested in new opportunities and collaborations.
+              Whether you have a project in mind or just want to say hello,
               feel free to reach out!
             </p>
           </div>
-
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <Mail className="text-gray-600 dark:text-gray-400" size={20} />
-              <span>nipa.sinthaisong@example.com</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <Phone className="text-gray-600 dark:text-gray-400" size={20} />
-              <span>+66 (0) 12-345-6789</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <MapPin className="text-gray-600 dark:text-gray-400" size={20} />
-              <span>Bangkok, Thailand</span>
-            </div>
+          <div className="space-y-4 justify-items-center">
+          <div className="flex items-center gap-3">
+            <Mail className="text-gray-600 dark:text-gray-400" size={20} />
+            <span>nipa010727@gmail.com</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <Phone className="text-gray-600 dark:text-gray-400" size={20} />
+            <span>095-609-1494</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <MapPin className="text-gray-600 dark:text-gray-400" size={20} />
+            <span>Ubon Ratchathani, Thailand</span>
           </div>
         </div>
-
-        <div>
+        </div>
+        
+        {/* <div>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -117,7 +116,7 @@ export default function Contact() {
               <Send size={16} />
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   )

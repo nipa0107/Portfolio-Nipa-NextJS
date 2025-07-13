@@ -1,8 +1,7 @@
 'use client'
 
-import Link from 'next/link'
 import Image from 'next/image'
-import { ExternalLink, Building2, CalendarDays } from 'lucide-react'
+import { Building2, CalendarDays } from 'lucide-react'
 
 export default function experience() {
     return (
@@ -44,13 +43,16 @@ export default function experience() {
                                 src="/TA_Cloud.jpg"
                                 alt='TA_Cloud'
                                 width={400}
-                                height={100} /> 
+                                height={100} 
+                                priority/> 
+                                
                                 <Image
                                 className='rounded-xl'
                                 src="/TA_Cloud_Lab.jpg"
                                 alt='TA_Cloud'
                                 width={400}
-                                height={100} /> 
+                                height={100} 
+                                priority/> 
                             </div>
                            
                         </div>

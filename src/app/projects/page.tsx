@@ -8,19 +8,18 @@ const projects = [
         id: 1,
         title: 'Caregiver Assistant Application for Patients at Home (Home Ward) - Senior Project',
         description: 'Web application for home-based patient care, featuring educational care guides and role-based data management for patients, caregivers, medical personnel, and administrators.',
-        technologies: ['React.js', 'JavaScript', 'CSS', 'Bootstrap', 'Node.js', 'Express.js', 'Socket.io', 'MongoDB'],
+        technologies: ['React.js', 'JavaScript', 'CSS', 'Bootstrap', 'Node.js', 'Express.js', 'Socket.io', 'MongoDB', 'Figma'],
         image: '/Homeward-doctor.png',
-        // 👇 เปลี่ยนเป็นโครงสร้างใหม่
         links: [
             {
                 label: 'Doctor ',
                 liveUrl: 'https://homewarddocter.vercel.app',
-                githubUrl: 'https://github.com/your-repo/doctor' // <-- แก้เป็นลิงก์ GitHub จริง
+                githubUrl: 'https://github.com/nipa0107/homewarddocter' // <-- แก้เป็นลิงก์ GitHub จริง
             },
             {
                 label: 'Admin ',
                 liveUrl: 'https://homeward.vercel.app/',
-                githubUrl: 'https://github.com/your-repo/admin' // <-- แก้เป็นลิงก์ GitHub จริง
+                githubUrl: 'https://github.com/nipa0107/homeward' // <-- แก้เป็นลิงก์ GitHub จริง
             },
             {
                 label: 'Youtube ',
@@ -32,44 +31,57 @@ const projects = [
     },
     {
         id: 2,
-        title: 'Web Blog',
-        description: 'A collaborative task management application with real-time updates',
-        technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
-        image: '/web-blog.gif',
+        title: 'Femme Fashion & Style Website',
+        description: 'Developed a responsive website for outfit ideas and styling tips, enhancing the overall user experience.',
+        technologies: ['HTML5', 'CSS3', 'Bootstrap5', 'Figma'],
+        image: '/Femme-Review.gif',
         links: [
             {
-                label: 'User App', // หรือจะใช้ 'Live Demo' ก็ได้
-                liveUrl: 'https://user.example.com',
-                githubUrl: 'https://github.com/nipa0107/homeward'
+                label: 'Website ',
+                liveUrl: 'http://202.28.94.18/wdt65/group/it/it12/webdesign/',
+                githubUrl: 'https://github.com/nipa0107/Femme-Website'
             }
         ]
     },
     {
         id: 3,
-        title: 'Weather Dashboard',
-        description: 'A responsive weather dashboard with location-based forecasts',
-        technologies: ['Vue.js', 'TypeScript', 'Chart.js', 'OpenWeather API'],
+        title: 'ToDo App',
+        description: 'Built a simple ToDo List mobile app, featuring task CRUD operations. Integrated Firebase Authentication for user login and Firestore for real-time task data management.',
+        technologies: ['React Native', 'JavaScript', 'Expo Dev', 'Firebase', 'Firestore'],
         image: '/ToDoApp.gif',
         links: [
             {
-                label: 'Website', // หรือ 'Demo'
-                liveUrl: 'https://example.com',
-                githubUrl: 'https://github.com'
+                label: '',
+                liveUrl: '',
+                githubUrl: 'https://github.com/nipa0107/ToDo-App'
             }
         ]
     },
     {
         id: 4,
-        title: 'Weather Dashboard',
-        description: 'A responsive weather dashboard with location-based forecasts',
-        technologies: ['Vue.js', 'TypeScript', 'Chart.js', 'OpenWeather API'],
-        image: '/Femme-Review.gif',
-        // 👇 เปลี่ยนเป็นโครงสร้างใหม่
+        title: 'ShabuQ',
+        description: 'Collaborated in a team to develop a shabu restaurant queue reservation application. The app features a customer queue booking system and an admin table management system.',
+        technologies: ['Kotlin', 'Android studio', 'Figma'],
+        image: '/ShabuQ.gif',
         links: [
             {
-                label: 'Website', // หรือ 'Demo'
-                liveUrl: 'https://example.com',
-                githubUrl: 'https://github.com'
+                label: '',
+                liveUrl: '',
+                githubUrl: 'https://github.com/nipa0107/ShabuQ'
+            }
+        ]
+    },
+    {
+        id: 5,
+        title: 'KKU Live Shuttlebus',
+        description: 'Collaborated with a team to design and test a prototype for a KKU shuttle bus app. Created mockups using Adobe XD and conducted usability testing with 8 participants to improve the user experience.',
+        technologies:['Adobe XD', 'UX/UI'],
+        image:'/KKU-Live-Shuttlebus.png',
+        links: [
+            {
+                label: 'Demo',
+                liveUrl: 'https://xd.adobe.com/view/3a23641f-4ff6-4a72-8218-5f27e924254c-6f70/',
+                githubUrl: 'https://github.com/nipa0107/KKU-Live-Shuttlebus'
             }
         ]
     }
@@ -102,7 +114,7 @@ export default function Projects() {
                                     alt={project.title}
                                     width={600}
                                     height={250}
-                                    // 👇 แก้ไข className ของ Image โดยลบ w-full และ h-full ออก
+                                    priority
                                     className="rounded-lg"
                                 />
                             </div>
@@ -118,7 +130,7 @@ export default function Projects() {
                                 {project.technologies.map((tech) => (
                                     <span
                                         key={tech}
-                                        className="px-2 py-1 bg-purple-100 text-xs rounded"
+                                        className="px-2 py-1 bg-purple-100 text-xs rounded-full"
                                     >
                                         {tech}
                                     </span>
@@ -130,7 +142,7 @@ export default function Projects() {
                                 {project.links?.map((link, index) => (
                                     <div key={index} className="flex flex-wrap items-center gap-x-4 gap-y-1">
                                         {/* แสดง Label ถ้ามีลิงก์มากกว่า 1 กลุ่ม */}
-                                        {project.links.length > 0 && (
+                                        {project.links.length > 1 && (
                                             <span className="font-semibold text-sm text-black">{link.label}:</span>
                                         )}
 
@@ -140,11 +152,11 @@ export default function Projects() {
                                                 href={link.liveUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center gap-1 text-sm text-black hover:text-purple-300 transition-colors duration-300"
+                                                className="inline-flex items-center gap-2 text-sm text-black bg-stone-100 rounded-full px-2 py-1 hover:bg-stone-200 transition-colors duration-300"
                                             >
-                                                {/* ถ้ามีลิงก์แค่กลุ่มเดียว อาจจะแสดงเป็น 'Live Demo' */}
-                                                {project.links.length > 0 && 'Live Demo' }
                                                 <ExternalLink size={14} />
+                                                {project.links.length > 0 && 'Live Demo'}
+                                                
                                             </a>
                                         )}
 
@@ -154,11 +166,11 @@ export default function Projects() {
                                                 href={link.githubUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center gap-1 text-sm text-black hover:text-purple-300 transition-colors duration-300"
+                                                className="inline-flex items-center gap-2 text-sm text-black bg-stone-100 rounded-full px-2 py-1 hover:bg-stone-200 transition-colors duration-300"
                                             >
-                                                {/* ถ้ามีลิงก์แค่กลุ่มเดียว อาจจะแสดงเป็น 'Source Code' */}
-                                                {project.links.length > 0 && 'GitHub'}
                                                 <Github size={14} />
+                                                {project.links.length > 0 && 'GitHub'}
+                                                
                                             </a>
                                         )}
                                     </div>
