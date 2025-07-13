@@ -63,7 +63,6 @@ export default function About() {
               </p>
             </div>
           </div>
-
           <div>
             <h3 className="text-xl font-semibold mb-4">Skills & Technologies</h3>
             <div className="flex flex-wrap gap-2">
@@ -75,6 +74,14 @@ export default function About() {
                   {skill}
                 </span>
               ))}
+            </div>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Certificate</h3>
+            <div className="space-y-4 text-stone-600">
+              <p>
+                Introduction to JIRA
+              </p>
             </div>
           </div>
         </div>

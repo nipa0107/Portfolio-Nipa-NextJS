@@ -84,6 +84,20 @@ const projects = [
                 githubUrl: 'https://github.com/nipa0107/KKU-Live-Shuttlebus'
             }
         ]
+    },
+    {
+        id: 6,
+        title: 'Automated & Manual Testing for Meb E-book Website',
+        description: 'Collaborated with a team to design and implement end-to-end authentication tests using Cypress, covering positive, negative, and edge cases. Also created and executed manual test cases for key user workflows, including account management and transaction processes.',
+        technologies:['Cypress', 'Automate Testing' , 'Manual Testing'],
+        image:'/meb_test.png',
+        links: [
+            {
+                label: 'Doc ',
+                liveUrl: '',
+                githubUrl: 'https://github.com/nipa0107/KKU-Live-Shuttlebus'
+            }
+        ]
     }
 ]
 
