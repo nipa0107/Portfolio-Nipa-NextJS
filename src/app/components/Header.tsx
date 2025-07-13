@@ -1,24 +1,27 @@
 'use client'
 
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 export default function Header() {
+  //สร้างเมนูที่คลิกแล้วแสดง/ซ่อน
+  //ใช้ useState เพื่อเก็บสถานะของเมนู (open)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navLinks = [
     { href: '/', label: 'Home' },
+    { href: '/experience', label: 'Experience' },
     { href: '/projects', label: 'Projects' },
     { href: '/about', label: 'About Me' },
     { href: '/contact', label: 'Contact' },
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
-      <nav className="container mx-auto px-4 py-4">
+    <header className="sticky top-0 z-50 text-black bg-white border-b border-gray-200">
+      <nav className="container mx-auto px-4 py-4 text-sm">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold hover:opacity-80 transition-opacity">
+          <Link href="/" className="text-xl px-4 font-bold hover:text-purple-200 transition-all duration-300">
             NS
           </Link>
 
@@ -38,10 +41,10 @@ export default function Header() {
 
           {/* Mobile Navigation */}
           <div className="md:hidden flex items-center space-x-2">
-
+            {/* เมื่อคลิกปุ่ม → toggle เมนูแสดง/ซ่อน */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="p-2 rounded-lg dark:hover:bg-purple-200"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -51,7 +54,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-800 pt-4">
+          <div className="md:hidden mt-4 pb-4 border-t dark:border-gray-200 pt-4">
             <div className="flex flex-col space-y-2">
               {navLinks.map((link) => (
                 <Link

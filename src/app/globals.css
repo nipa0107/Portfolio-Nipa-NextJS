@@ -1,18 +1,16 @@
 @import "tailwindcss";
 
+root {
+  --background: #ffffff;
+  /* --foreground: #171717; */
+}
 
-:root {
+/* @media (prefers-color-scheme: dark) {
+  :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
   }
-}
-
+} */
 html {
   scroll-behavior: smooth;
 }
@@ -36,7 +34,7 @@ body {
 }
 
 .btn-primary:hover {
-  opacity: 0.8;
+  background-color: #d8b4fe;
 }
 
 .nav-link {
@@ -51,12 +49,12 @@ body {
 
 @media (prefers-color-scheme: dark) {
   .btn-primary {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
   }
   
   .nav-link:hover {
-    background-color: #1f2937;
+    background-color: #e9d5ff;
   }
 }
 
