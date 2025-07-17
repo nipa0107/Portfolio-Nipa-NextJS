@@ -7,19 +7,26 @@ const projects = [
     {
         id: 1,
         title: 'Caregiver Assistant Application for Patients at Home (Home Ward) - Senior Project',
-        description: 'Web application for home-based patient care, featuring educational care guides and role-based data management for patients, caregivers, medical personnel, and administrators.',
+        description: 
+        [
+        '• Developed a web application for home-based patient care, featuring educational care guides and role-based data management for patients, caregivers, medical personnel, and administrators.',
+        '• Collaborated with the team to design the system and analyze user requirements to ensure comprehensive data presentation for all four user groups.',
+        '• Implemented a multi-step patient health assessment form to ensure structured and systematic evaluations, and designed a real-time dashboard to enhance the efficiency of patient data access for medical personnel.',
+    ],
         technologies: ['React.js', 'JavaScript', 'CSS', 'Bootstrap', 'Node.js', 'Express.js', 'Socket.io', 'MongoDB', 'Figma'],
         image: '/Homeward-doctor.png',
         links: [
             {
                 label: 'Doctor ',
                 liveUrl: 'https://homewarddocter.vercel.app',
-                githubUrl: 'https://github.com/nipa0107/homewarddocter' // <-- แก้เป็นลิงก์ GitHub จริง
+                githubUrl: 'https://github.com/nipa0107/homewarddocter',
+
+
             },
             {
                 label: 'Admin ',
                 liveUrl: 'https://homeward.vercel.app/',
-                githubUrl: 'https://github.com/nipa0107/homeward' // <-- แก้เป็นลิงก์ GitHub จริง
+                githubUrl: 'https://github.com/nipa0107/homeward'
             },
             {
                 label: 'Youtube ',
@@ -32,13 +39,18 @@ const projects = [
     {
         id: 2,
         title: 'Femme Fashion & Style Website',
-        description: 'Developed a responsive website for outfit ideas and styling tips, enhancing the overall user experience.',
-        technologies: ['HTML5', 'CSS3', 'Bootstrap5', 'Figma'],
+        description:
+            [
+                '• Developed a responsive website that showcases a wide variety of outfit ideas and styling tips for different fashion preferences.',
+                '• I was responsible for the UI design and front-end development, using HTML5, CSS3, Bootstrap 5, and Figma for prototyping and layout planning.',
+                '• The final site delivered an improved browsing experience across devices and helped users easily explore style ideas, leading to higher engagement during user testing.',
+            ],
+        technologies: ['HTML', 'CSS', 'Bootstrap', 'Figma'],
         image: '/Femme-Review.gif',
         links: [
             {
                 label: 'Website ',
-                liveUrl: 'http://202.28.94.18/wdt65/group/it/it12/webdesign/',
+                liveUrl: 'https://femme-website.vercel.app/',
                 githubUrl: 'https://github.com/nipa0107/Femme-Website'
             }
         ]
@@ -46,7 +58,12 @@ const projects = [
     {
         id: 3,
         title: 'ToDo App',
-        description: 'Built a simple ToDo List mobile app, featuring task CRUD operations. Integrated Firebase Authentication for user login and Firestore for real-time task data management.',
+        description:
+            [
+                '• Developed a simple real-time task management app for everyday users, addressing the complexity found in most existing ToDo applications.',
+                '• Built a mobile ToDo List app as a full-stack developer, handling both front-end and back-end. Used Firebase Authentication for login and Firestore for real-time CRUD operations.',
+                '• Improved task tracking efficiency and gained hands-on experience with real-time app development and user authentication flow.',
+            ],
         technologies: ['React Native', 'JavaScript', 'Expo Dev', 'Firebase', 'Firestore'],
         image: '/ToDoApp.gif',
         links: [
@@ -59,8 +76,12 @@ const projects = [
     },
     {
         id: 4,
-        title: 'ShabuQ',
-        description: 'Collaborated in a team to develop a shabu restaurant queue reservation application. The app features a customer queue booking system and an admin table management system.',
+        title: 'ShabuQueue',
+        description: [
+            '• A local shabu restaurant faced long wait times and inefficient paper-based queue management, causing customer dissatisfaction and wasted time. Our team developed a queue reservation app for customers along with an admin-facing table management system.',
+            '• I designed UI, database, and front-end using Kotlin and Figma, working in a 7-person team from user research to interface design.',
+            // '• This project deepened my understanding of team collaboration in multi-stakeholder environments and taught me how to design user-centered solutions in real-world business contexts.',
+        ],
         technologies: ['Kotlin', 'Android studio', 'Figma'],
         image: '/ShabuQ.gif',
         links: [
@@ -74,27 +95,18 @@ const projects = [
     {
         id: 5,
         title: 'KKU Live Shuttlebus',
-        description: 'Collaborated with a team to design and test a prototype for a KKU shuttle bus app. Created mockups using Adobe XD and conducted usability testing with 8 participants to improve the user experience.',
-        technologies:['Adobe XD', 'UX/UI'],
-        image:'/KKU-Live-Shuttlebus.png',
+        description: [
+            '• In my first year, I collaborated with the team to develop a new application to address the issues of the existing KKU Transit app, which lacked accurate real-time vehicle tracking and had a user experience that didn’t meet users needs',
+            '• I was responsible for UI/UX design using Adobe XD to create prototypes and interactive designs. The process began with analyzing user pain points gathered through surveys, followed by designing wireframes with a focus on clear and intuitive navigation.',
+            '• Testing with a group of 8 real users showed that 70% were able to achieve their goals on the first try. The average satisfaction rating was 4.375 out of 5, and the project received positive feedback. This experience helped me gain a deeper understanding of the importance of context-aware design.'
+        ]
+        ,
+        technologies: ['Adobe XD', 'UX/UI'],
+        image: '/KKU-Live-Shuttlebus.png',
         links: [
             {
                 label: 'Demo',
                 liveUrl: 'https://xd.adobe.com/view/3a23641f-4ff6-4a72-8218-5f27e924254c-6f70/',
-                githubUrl: 'https://github.com/nipa0107/KKU-Live-Shuttlebus'
-            }
-        ]
-    },
-    {
-        id: 6,
-        title: 'Automated & Manual Testing for Meb E-book Website',
-        description: 'Collaborated with a team to design and implement end-to-end authentication tests using Cypress, covering positive, negative, and edge cases. Also created and executed manual test cases for key user workflows, including account management and transaction processes.',
-        technologies:['Cypress', 'Automate Testing' , 'Manual Testing'],
-        image:'/meb_test.png',
-        links: [
-            {
-                label: 'Doc ',
-                liveUrl: '',
                 githubUrl: 'https://github.com/nipa0107/KKU-Live-Shuttlebus'
             }
         ]
@@ -134,11 +146,18 @@ export default function Projects() {
                             </div>
                         </div>
                         {/* ข้อมูลด้านขวา */}
-                        <div className="md:w-1/2 space-y-4 p-5">
+                        <div className="md:w-1/2 space-y-3 p-5">
                             <h3 className="text-xl text-black font-semibold">{project.title}</h3>
-                            <p className="text-neutral-500 text-sm">
-                                {project.description}
-                            </p>
+                            <div className="text-neutral-500 text-sm ">
+                                {Array.isArray(project.description) ? (
+                                    project.description.map((paragraph, index) => (
+                                        <p key={index} className="mb-2.5">{paragraph}</p>
+                                    ))
+                                ) : (
+                                    <p>{project.description}</p>
+                                )}
+                            </div>
+
 
                             <div className="flex flex-wrap gap-2">
                                 {project.technologies.map((tech) => (
@@ -159,7 +178,6 @@ export default function Projects() {
                                         {project.links.length > 1 && (
                                             <span className="font-semibold text-sm text-black">{link.label}:</span>
                                         )}
-
                                         {/* แสดง Live URL ถ้ามี */}
                                         {link.liveUrl && (
                                             <a
@@ -170,10 +188,9 @@ export default function Projects() {
                                             >
                                                 <ExternalLink size={14} />
                                                 {project.links.length > 0 && 'Live Demo'}
-                                                
+
                                             </a>
                                         )}
-
                                         {/* แสดง GitHub URL ถ้ามี */}
                                         {link.githubUrl && (
                                             <a
@@ -184,7 +201,7 @@ export default function Projects() {
                                             >
                                                 <Github size={14} />
                                                 {project.links.length > 0 && 'GitHub'}
-                                                
+
                                             </a>
                                         )}
                                     </div>

@@ -10,18 +10,6 @@ export default function Home() {
       <div className="text-center space-y-8 max-w-4xl mx-auto">
         {/* เมนูลิงก์เปลี่ยนหน้า */}
         <div className="flex justify-center space-x-8 mb-12">
-          {/* <Link 
-            href="/projects" 
-            className="text-sm uppercase tracking-wider px-4 py-1.5 bg-purple-200 rounded-2xl hover:text-white transition-colors duration-300"
-          >
-            Projects
-          </Link>
-          <Link 
-            href="/about" 
-            className="text-sm uppercase tracking-wider px-4 py-1.5 bg-gray-200 rounded-2xl hover:text-purple-300 transition-colors duration-300"
-          >
-            About Me
-          </Link> */}
           <p 
             className="text-sm font-medium uppercase tracking-wider px-4 py-1.5 bg-purple-200 rounded-2xl"
           >
@@ -40,7 +28,8 @@ export default function Home() {
           </h1>
           
           <p className="text-lg md:text-xl text-stone-400 max-w-2xl mx-auto">
-            Frontend Developer passionate about building delightful user interfaces and ensuring quality through effective software testing 🚀
+            {/* Frontend Developer passionate about building delightful user interfaces and ensuring quality through effective software testing 🚀 */}
+            Frontend Developer passionate about creating beautiful and functional web experiences 🚀
           </p>
         </div>
 
@@ -64,13 +53,13 @@ export default function Home() {
 
         {/* ลิงก์ social ทั้งหมด */}
         <div className="flex justify-center space-x-6 pt-8">
-          <a 
+          {/* <a 
             href="mailto:nipa010727@gmail.com"
             className="p-2 hover:text-purple-300 transition-colors duration-300"
             aria-label="Email"
           >
             <Mail size={24} />
-          </a>
+          </a> */}
           <a 
             href="https://github.com/nipa0107"
             className="p-2 hover:text-purple-300 transition-colors duration-300"

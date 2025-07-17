@@ -11,7 +11,7 @@ export default function experience() {
                     <span className="text-sm font-medium bg-purple-200 px-4 py-1.5 rounded-full">Experience</span>
                 </div>
                 <div className="relative">
-                    <div className="relative pl-8 not-last:pb-12">
+                    <div className="relative not-last:pb-12">
                         <div className="space-y-3">
                             <div className="flex items-center gap-3">
                                 <div className="flex-shrink-0 size-9 bg-sky-100 rounded-full flex items-center justify-center">
@@ -31,8 +31,8 @@ export default function experience() {
                                     <span>Nov 2024 - Feb 2025</span>
                                 </div>
                             </div>
-                            <p className="text-neutral-500">• Assisted the instructor in teaching and provided guidance on best practices for using AWS services (such as EC2, IAM, RDS, VPC, etc.) to over 50 undergraduate students.</p>
-                            <p className="text-neutral-500">• Took the lead in organizing the laboratory, provided guidance and resolved issues during weekly lab activities, and delivered detailed feedback to enhance learning outcomes.</p>
+                            <p className="text-neutral-500 text-justify">• Assisted the instructor in teaching and provided guidance on best practices for using AWS services (such as EC2, IAM, RDS, VPC, etc.) to over 50 undergraduate students.</p>
+                            <p className="text-neutral-500 text-justify">• Took the lead in organizing the laboratory, provided guidance and resolved issues during weekly lab activities, and delivered detailed feedback to enhance learning outcomes.</p>
                             <div className="flex flex-wrap gap-2 ">
                                 <span className='text-xs font-medium bg-stone-100 p-2 rounded-full'>Amazon Web Service</span>
                                 <span className='text-xs font-medium bg-stone-100 p-2 rounded-full'>Google Sheet</span>
@@ -45,7 +45,7 @@ export default function experience() {
                                 width={400}
                                 height={100} 
                                 priority/> 
-                                
+
                                 <Image
                                 className='rounded-xl'
                                 src="/TA_Cloud_Lab.jpg"
