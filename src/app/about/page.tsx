@@ -35,7 +35,8 @@ export default function About() {
               src="/ME.png"
               alt="image_me"
               width={250}
-              height={250} />
+              height={250} 
+              />
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3  ">
             <a 
@@ -49,7 +50,9 @@ export default function About() {
 
         <div className="space-y-6">
           <div>
-            <h2 className="inline-flex items-center justify-center gap-2 text-2xl font-semibold mb-4">Hi!, I'm Nipa<img width={30} src="https://em-content.zobj.net/thumbs/120/apple/354/waving-hand_1f44b.png" /></h2>
+            <h2 className="inline-flex items-center justify-center gap-2 text-2xl font-semibold mb-4">Hi!, I&apos;m Nipa 
+              <Image width={30} height={30} src="https://em-content.zobj.net/thumbs/120/apple/354/waving-hand_1f44b.png" alt="waving-hand"/>
+              </h2>
             <div className="space-y-4 text-stone-600">
               <p className=""> 
                 As a recent graduate in Information Technology, I have a strong interest in website development and frontend technologies. I am dedicated to improving my skills in designing and developing user-centric UI/UX and always open to embracing new technologies.

@@ -10,7 +10,7 @@ export default function Contact() {
         <div className="text-center mb-10">
           <span className="text-sm font-medium bg-purple-200 px-4 py-1.5 rounded-full">Contact</span>
         </div>
-        <h1 className="text-4xl sm:text-4xl font-bold tracking-tight">🤝 Let's Connect</h1>
+        <h1 className="text-4xl sm:text-4xl font-bold tracking-tight">🤝 Let&#39;s Connect</h1>
       </div>
 
       <div className="flex justify-center text-center ">
@@ -18,7 +18,7 @@ export default function Contact() {
           <h2 className="text-2xl text-stone-700 font-semibold mb-6">Get in Touch</h2>
           <div className='flex items-center justify-center'>
             <p className="text-stone-600 mb-8">
-              I'm always interested in new opportunities and collaborations.
+              I&#39;m always interested in new opportunities and collaborations.
               Whether you have a project in mind or just want to say hello,
               feel free to reach out!
             </p>
