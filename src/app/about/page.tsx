@@ -1,5 +1,5 @@
 import Image from "next/image"
-import {Github, Eye , ExternalLink } from 'lucide-react'
+import {Github, ExternalLink } from 'lucide-react'
 
 export default function About() {
   const stacks = [
@@ -15,11 +15,6 @@ export default function About() {
     'Positive Attitude',
   ]
 
-  const frontend =[
-    'React', 
-    '',
-    '',
-  ]
   return (
     <div className="max-w-4xl mx-auto space-y-9">
       <div className="text-center space-y-4">
@@ -49,12 +44,6 @@ export default function About() {
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium bg-black text-white p-2 rounded-full px-4 py-2 hover:text-white hover:bg-purple-300 transition-all duration-300">
               <Github size={18} />View Github
             </a>
-            {/* <a 
-            href="/files/Resume2025.pdf"
-            target="_blank"
-            className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium border border-stone-300 p-2 rounded-full px-4 py-2 hover:bg-stone-200 transition-all duration-300">
-              <Eye size={18}/>View Resume
-            </a> */}
           </div>
         </div>
 

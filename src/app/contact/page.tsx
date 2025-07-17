@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, MapPin, Phone, Send } from 'lucide-react'
+import { Mail, MapPin, Phone } from 'lucide-react'
 
 export default function Contact() {
 
@@ -10,7 +10,7 @@ export default function Contact() {
         <div className="text-center mb-10">
           <span className="text-sm font-medium bg-purple-200 px-4 py-1.5 rounded-full">Contact</span>
         </div>
-        <h1 className="text-4xl sm:text-4xl font-bold tracking-tight">🤝 Let’s Connect</h1>
+        <h1 className="text-4xl sm:text-4xl font-bold tracking-tight">🤝 Let's Connect</h1>
       </div>
 
       <div className="flex justify-center text-center ">

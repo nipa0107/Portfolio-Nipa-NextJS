@@ -2,7 +2,7 @@
 
 import TypewriterText from './components/TypewriterText'
 import Link from 'next/link'
-import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
+import { ArrowRight, Github, Linkedin } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -53,13 +53,6 @@ export default function Home() {
 
         {/* ลิงก์ social ทั้งหมด */}
         <div className="flex justify-center space-x-6 pt-8">
-          {/* <a 
-            href="mailto:nipa010727@gmail.com"
-            className="p-2 hover:text-purple-300 transition-colors duration-300"
-            aria-label="Email"
-          >
-            <Mail size={24} />
-          </a> */}
           <a 
             href="https://github.com/nipa0107"
             className="p-2 hover:text-purple-300 transition-colors duration-300"
