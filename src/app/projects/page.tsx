@@ -14,7 +14,7 @@ const projects = [
         '• Implemented a multi-step patient health assessment form to ensure structured and systematic evaluations, and designed a real-time dashboard to enhance the efficiency of patient data access for medical personnel.',
     ],
         technologies: ['React.js', 'JavaScript', 'CSS', 'Bootstrap', 'Node.js', 'Express.js', 'Socket.io', 'MongoDB', 'Figma'],
-        image: '/Homeward-doctor.png',
+        image: '/Homeward-Doctor.png',
         links: [
             {
                 label: 'Doctor ',
