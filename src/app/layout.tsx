@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   title: "Portfolio",
   description: "Portfolio ของนักพัฒนาเว็บ",
   icons: {
-    icon: '/logo.png',
-    shortcut: '/logo.png',
-    apple: '/logo.png',
+    icon: '/Logo.png',
+    shortcut: '/Logo.png',
+    apple: '/Logo.png',
   },
 };
 
