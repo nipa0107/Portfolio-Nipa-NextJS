@@ -29,7 +29,7 @@ export default function Home() {
           
           <p className="text-lg md:text-xl text-stone-400 max-w-2xl mx-auto">
             {/* Frontend Developer passionate about building delightful user interfaces and ensuring quality through effective software testing 🚀 */}
-            Frontend Developer passionate about creating beautiful and functional web experiences 🚀
+            Motivated IT graduate with a strong foundation in UX/UI design and IAM. Skilled in creating intuitive, user-friendly interfaces and eager to contribute to seamless user experiences in collaborative environments.  🚀
           </p>
         </div>
 
