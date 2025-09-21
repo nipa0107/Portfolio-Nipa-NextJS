@@ -6,7 +6,7 @@ export default function About() {
     'JavaScript', 'TypeScript','SQL', 'React','React Native', 'Next.js',
     'HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap',
     'Node.js', 'Express.js','Laravel', 'MongoDB','MySQL',
-    'GitHub','Firebase', 'Vite', 'Cypress','Postman', 'Figma','Adobe XD', 'Jira (Beginner)'
+    'GitHub','Firebase', 'Cypress','Postman', 'Figma','Adobe XD', 'Jira','and more...'
   ]
 
   const skills = [
@@ -21,10 +21,10 @@ export default function About() {
         <div className="text-center mb-10">
           <span className="text-sm font-medium bg-purple-200 px-4 py-1.5 rounded-full">About</span>
         </div>
-        <h1 className="text-4xl sm:text-4xl font-bold tracking-tight">Passionate about building meaningful web experiences</h1>
-        <p className="text-lg text-stone-500">
+        <h1 className="text-4xl sm:text-4xl font-bold tracking-tight">Get to know more about my background and expertise</h1>
+        {/* <p className="text-lg text-stone-500">
           Get to know more about my background and expertise
-        </p>
+        </p> */}
       </div>
 
       <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -32,10 +32,10 @@ export default function About() {
           <div className="flex items-center justify-center">
             <Image
               className="rounded-xl"
-              src="/ME.png"
+              src="/photo3x4.png"
               alt="image_me"
-              width={250}
-              height={250} 
+              width={200}
+              height={200} 
               />
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3  ">
@@ -55,11 +55,11 @@ export default function About() {
               </h2>
             <div className="space-y-4 text-stone-600">
               <p className=""> 
-                As a recent graduate in Information Technology, I have a strong interest in website development and frontend technologies. I am dedicated to improving my skills in designing and developing user-centric UI/UX and always open to embracing new technologies.
+                As a recent graduate in Information Technology from Khon Kaen University, I have a strong passion for learning and contributing to the tech industry. My academic background and project experience have equipped me with skills in web development, problem-solving, and collaborative teamwork.
               </p>
-              <p>
+              {/* <p>
                 I am confident in my analytical thinking, problem-solving abilities, and decision-making skills. With a solid foundation in HTML, CSS, JavaScript, TypeScripts and frameworks such as React and Next.js, I am ready to contribute to a development team and help enhance both performance and user experience.
-              </p>
+              </p> */}
             </div>
           </div>
           <div>

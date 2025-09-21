@@ -34,7 +34,7 @@ export default function Contact() {
             </div>
             <div className="flex items-center gap-3">
               <MapPin className="text-gray-600 dark:text-gray-400" size={20} />
-              <span>Ubon Ratchathani, Thailand</span>
+              <span>Chonburi, Thailand</span>
             </div>
           </div>
         </div>

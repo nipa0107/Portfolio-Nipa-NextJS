@@ -6,13 +6,15 @@ import { ExternalLink, Github } from 'lucide-react'
 const projects = [
     {
         id: 1,
-        title: 'Caregiver Assistant Application for Patients at Home (Home Ward) - Senior Project',
-        description: 
-        [
-        '• Developed a web application for home-based patient care, featuring educational care guides and role-based data management for patients, caregivers, medical personnel, and administrators.',
-        '• Collaborated with the team to design the system and analyze user requirements to ensure comprehensive data presentation for all four user groups.',
-        '• Implemented a multi-step patient health assessment form to ensure structured and systematic evaluations, and designed a real-time dashboard to enhance the efficiency of patient data access for medical personnel.',
-    ],
+        title: 'Senior Project: Caregiver Assistant Application for Patients at Home (Home Ward)',
+        position: 'Full-Stack Developer',
+        date: 'Jan 2024 - Feb 2025',
+        description:
+            [
+                '• Developed a web application for home-based patient care, featuring educational care guides and role-based data management for patients, caregivers, medical personnel, and administrators.',
+                '• Collaborated with the team to design and implement the overall system architecture and data management leveraging the MERN Stack',
+                '• Designed an interactive dashboard with real-time data visualization, integrated chat communication, and symptom tracking to help medical personnel monitor patient conditions more effectively.'
+            ],
         technologies: ['React.js', 'JavaScript', 'CSS', 'Bootstrap', 'Node.js', 'Express.js', 'Socket.io', 'MongoDB', 'Figma'],
         image: '/Homeward-Doctor.png',
         links: [
@@ -38,7 +40,69 @@ const projects = [
     },
     {
         id: 2,
-        title: 'Femme Fashion & Style Website',
+        title: 'Academic Project: ToDo App',
+        position: 'Mobile App Developer',
+        date: 'Mar 2023',
+        description:
+            [
+                '• Developed a simple real-time task management app for everyday users, addressing the complexity found in most existing ToDo applications.',
+                '• Built a mobile ToDo List app as a Mobile App Developer, handling both front-end and back-end. Used Firebase Authentication for login and Firestore for real-time CRUD operations.',
+                '• Improved task tracking efficiency and gained hands-on experience with real-time app development and user authentication flow.',
+            ],
+        technologies: ['React Native', 'JavaScript', 'Expo Dev', 'Firebase', 'Firestore'],
+        image: '/ToDoApp.gif',
+        links: [
+            {
+                label: '',
+                liveUrl: '',
+                githubUrl: 'https://github.com/nipa0107/ToDo-App'
+            }
+        ]
+    },
+    {
+        id: 3,
+        title: 'Academic Project: ShabuQueue',
+        position: 'Android Front-End Developer',
+        date: 'Feb 2023',
+        description: [
+            '• A local shabu restaurant faced long wait times and inefficient paper-based queue management, causing customer dissatisfaction and wasted time. Our team developed a queue reservation app for customers along with an admin-facing table management system.',
+            '• I designed UI, database, and front-end using Kotlin and Figma, working in a 7-person team from user research to interface design.',
+            // '• This project deepened my understanding of team collaboration in multi-stakeholder environments and taught me how to design user-centered solutions in real-world business contexts.',
+        ],
+        technologies: ['Kotlin', 'Android studio', 'Figma'],
+        image: '/ShabuQ.gif',
+        links: [
+            {
+                label: '',
+                liveUrl: '',
+                githubUrl: 'https://github.com/nipa0107/ShabuQ'
+            }
+        ]
+    },
+    {
+        id: 4,
+        title: 'Academic Project: Emerald jewelry Web Application',
+        position: 'Back-end Developer',
+        date: 'Sep 2022',
+        description: [
+            '• Collaborated with a team explore e-commerce development principles by building a jewelry web application with Laravel and phpMyAdmin, implementing user registration, product listing functionalities and database schema design.',
+            // '• This project deepened my understanding of team collaboration in multi-stakeholder environments and taught me how to design user-centered solutions in real-world business contexts.',
+        ],
+        technologies: ['Laravel', 'PHP','HTML','CSS', 'MySQL', 'phpMyAdmin'],
+        image: '/Emerald.png',
+        links: [
+            {
+                label: '',
+                liveUrl: '',
+                githubUrl: ''
+            }
+        ]
+    },
+    {
+        id: 5,
+        title: 'Academic Project: Femme Fashion & Style Website',
+        position: 'Front-end Developer',
+        date: 'Sep 2022',
         description:
             [
                 '• Developed a responsive website that showcases a wide variety of outfit ideas and styling tips for different fashion preferences.',
@@ -56,48 +120,13 @@ const projects = [
         ]
     },
     {
-        id: 3,
-        title: 'ToDo App',
-        description:
-            [
-                '• Developed a simple real-time task management app for everyday users, addressing the complexity found in most existing ToDo applications.',
-                '• Built a mobile ToDo List app as a full-stack developer, handling both front-end and back-end. Used Firebase Authentication for login and Firestore for real-time CRUD operations.',
-                '• Improved task tracking efficiency and gained hands-on experience with real-time app development and user authentication flow.',
-            ],
-        technologies: ['React Native', 'JavaScript', 'Expo Dev', 'Firebase', 'Firestore'],
-        image: '/ToDoApp.gif',
-        links: [
-            {
-                label: '',
-                liveUrl: '',
-                githubUrl: 'https://github.com/nipa0107/ToDo-App'
-            }
-        ]
-    },
-    {
-        id: 4,
-        title: 'ShabuQueue',
-        description: [
-            '• A local shabu restaurant faced long wait times and inefficient paper-based queue management, causing customer dissatisfaction and wasted time. Our team developed a queue reservation app for customers along with an admin-facing table management system.',
-            '• I designed UI, database, and front-end using Kotlin and Figma, working in a 7-person team from user research to interface design.',
-            // '• This project deepened my understanding of team collaboration in multi-stakeholder environments and taught me how to design user-centered solutions in real-world business contexts.',
-        ],
-        technologies: ['Kotlin', 'Android studio', 'Figma'],
-        image: '/ShabuQ.gif',
-        links: [
-            {
-                label: '',
-                liveUrl: '',
-                githubUrl: 'https://github.com/nipa0107/ShabuQ'
-            }
-        ]
-    },
-    {
-        id: 5,
-        title: 'KKU Live Shuttlebus',
+        id: 6,
+        title: 'Academic Project: KKU Live Shuttlebus',
+        position: 'UX/UI Designer',
+        date: 'March 2022',
         description: [
             '• In my first year, I collaborated with the team to develop a new application to address the issues of the existing KKU Transit app, which lacked accurate real-time vehicle tracking and had a user experience that didn’t meet users needs',
-            '• I was responsible for UI/UX design using Adobe XD to create prototypes and interactive designs. The process began with analyzing user pain points gathered through surveys, followed by designing wireframes with a focus on clear and intuitive navigation.',
+            '• I was responsible for UX/UI design using Adobe XD to create prototypes and interactive designs. The process began with analyzing user pain points gathered through surveys, followed by designing wireframes with a focus on clear and intuitive navigation.',
             '• Testing with a group of 8 real users showed that 70% were able to achieve their goals on the first try. The average satisfaction rating was 4.375 out of 5, and the project received positive feedback. This experience helped me gain a deeper understanding of the importance of context-aware design.'
         ]
         ,
@@ -146,8 +175,9 @@ export default function Projects() {
                             </div>
                         </div>
                         {/* ข้อมูลด้านขวา */}
-                        <div className="md:w-1/2 space-y-3 p-5">
+                        <div className="md:w-1/2 space-y-3 p-4">
                             <h3 className="text-xl text-black font-semibold">{project.title}</h3>
+                            <h5 className=" text-neutral-500 font-semibold italic">{project.position} ({project.date})</h5>
                             <div className="text-neutral-500 text-sm ">
                                 {Array.isArray(project.description) ? (
                                     project.description.map((paragraph, index) => (
