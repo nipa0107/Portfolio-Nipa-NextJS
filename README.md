@@ -1,11 +1,11 @@
-# 💼 Personal Portfolio - Frontend Developer
+# 💼 Personal Portfolio
 
 Welcome to my personal portfolio website!  
-This site showcases my projects, skills, and experience as a frontend developer, designed to reflect my passion for creating clean, responsive, and user-friendly interfaces.
+This site showcases my projects, skills, and experience as a Web developer, designed to reflect my passion for creating clean, responsive, and user-friendly interfaces.
 
 ## 🚀 About Me
 
-I'm a recent Information Technology graduate from Khon Kaen University with a strong focus on frontend development.  
+I'm a recent Information Technology graduate from Khon Kaen University,
 I enjoy building intuitive and accessible web applications using modern technologies like **HTML**, **CSS**, **JavaScript**, **React**, and **Next.js**.
 
 ## 🛠 Tech Stack
